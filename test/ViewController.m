@@ -7,9 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface ViewController ()
-
+{
+    FirstViewController *firstViewController;
+    SecondViewController *secondViewController;
+    ThirdViewController *thirdViewController;
+}
 @end
 
 @implementation ViewController
@@ -17,11 +24,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    firstViewController=[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    [self addChildViewController:firstViewController];
+    
+    secondViewController=[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    [self addChildViewController:secondViewController];
+    
+   thirdViewController=[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    [self addChildViewController:thirdViewController];
+    
+    
+    [self.contentView addSubview:thirdViewController.view];
+    self.currentViewController = thirdViewController;
+    
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)first:(UIButton *)sender {
+    [self transitionFromViewController:self.currentViewController toViewController:firstViewController duration:1 options:UIViewAnimationOptionTransitionCurlUp animations:^{
+    }  completion:^(BOOL finished) {
+        //......
+    }];
+    self.currentViewController=firstViewController;}
+
+- (IBAction)second:(UIButton *)sender {
+    [self transitionFromViewController:self.currentViewController toViewController:secondViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+    }  completion:^(BOOL finished) {
+        //......
+    }];
+    self.currentViewController=secondViewController;
+}
+
+- (IBAction)thrid:(UIButton *)sender {
+    [self transitionFromViewController:self.currentViewController toViewController:thirdViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
+    }  completion:^(BOOL finished) {
+        //......
+    }];
+    self.currentViewController=thirdViewController;
+}
 @end

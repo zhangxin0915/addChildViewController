@@ -15,6 +15,12 @@
 		94CD84481BF9736B0055E648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CD84471BF9736B0055E648 /* Images.xcassets */; };
 		94CD844B1BF9736B0055E648 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CD84491BF9736B0055E648 /* LaunchScreen.xib */; };
 		94CD84571BF9736B0055E648 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CD84561BF9736B0055E648 /* testTests.m */; };
+		94DA93DD1BF9D2F30098A103 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DA93DB1BF9D2F30098A103 /* FirstViewController.m */; };
+		94DA93DE1BF9D2F30098A103 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94DA93DC1BF9D2F30098A103 /* FirstViewController.xib */; };
+		94DA93E21BF9D3050098A103 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DA93E01BF9D3050098A103 /* SecondViewController.m */; };
+		94DA93E31BF9D3050098A103 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94DA93E11BF9D3050098A103 /* SecondViewController.xib */; };
+		94DA93E71BF9D31C0098A103 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DA93E51BF9D31C0098A103 /* ThirdViewController.m */; };
+		94DA93E81BF9D31C0098A103 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94DA93E61BF9D31C0098A103 /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,15 @@
 		94CD84501BF9736B0055E648 /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CD84551BF9736B0055E648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94CD84561BF9736B0055E648 /* testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
+		94DA93DA1BF9D2F30098A103 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		94DA93DB1BF9D2F30098A103 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		94DA93DC1BF9D2F30098A103 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		94DA93DF1BF9D3050098A103 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		94DA93E01BF9D3050098A103 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		94DA93E11BF9D3050098A103 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		94DA93E41BF9D31C0098A103 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		94DA93E51BF9D31C0098A103 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		94DA93E61BF9D31C0098A103 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +102,15 @@
 				94CD843C1BF9736B0055E648 /* AppDelegate.m */,
 				94CD84411BF9736B0055E648 /* ViewController.h */,
 				94CD84421BF9736B0055E648 /* ViewController.m */,
+				94DA93DA1BF9D2F30098A103 /* FirstViewController.h */,
+				94DA93DB1BF9D2F30098A103 /* FirstViewController.m */,
+				94DA93DC1BF9D2F30098A103 /* FirstViewController.xib */,
+				94DA93DF1BF9D3050098A103 /* SecondViewController.h */,
+				94DA93E01BF9D3050098A103 /* SecondViewController.m */,
+				94DA93E11BF9D3050098A103 /* SecondViewController.xib */,
+				94DA93E41BF9D31C0098A103 /* ThirdViewController.h */,
+				94DA93E51BF9D31C0098A103 /* ThirdViewController.m */,
+				94DA93E61BF9D31C0098A103 /* ThirdViewController.xib */,
 				94CD84441BF9736B0055E648 /* Main.storyboard */,
 				94CD84471BF9736B0055E648 /* Images.xcassets */,
 				94CD84491BF9736B0055E648 /* LaunchScreen.xib */,
@@ -204,7 +228,10 @@
 			files = (
 				94CD84461BF9736B0055E648 /* Main.storyboard in Resources */,
 				94CD844B1BF9736B0055E648 /* LaunchScreen.xib in Resources */,
+				94DA93E81BF9D31C0098A103 /* ThirdViewController.xib in Resources */,
 				94CD84481BF9736B0055E648 /* Images.xcassets in Resources */,
+				94DA93DE1BF9D2F30098A103 /* FirstViewController.xib in Resources */,
+				94DA93E31BF9D3050098A103 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94DA93E21BF9D3050098A103 /* SecondViewController.m in Sources */,
 				94CD843D1BF9736B0055E648 /* AppDelegate.m in Sources */,
 				94CD843A1BF9736B0055E648 /* main.m in Sources */,
+				94DA93DD1BF9D2F30098A103 /* FirstViewController.m in Sources */,
 				94CD84431BF9736B0055E648 /* ViewController.m in Sources */,
 				94CD84401BF9736B0055E648 /* test.xcdatamodeld in Sources */,
+				94DA93E71BF9D31C0098A103 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +448,7 @@
 				94CD845C1BF9736B0055E648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94CD845D1BF9736B0055E648 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +457,7 @@
 				94CD845F1BF9736B0055E648 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

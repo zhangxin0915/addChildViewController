@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
-
+- (IBAction)first:(UIButton *)sender;
+- (IBAction)second:(UIButton *)sender;
+- (IBAction)thrid:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (nonatomic,strong) UIViewController *currentViewController;
 @end
 
