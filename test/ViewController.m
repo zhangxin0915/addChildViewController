@@ -51,7 +51,7 @@
     self.currentViewController=firstViewController;}
 
 - (IBAction)second:(UIButton *)sender {
-    [self transitionFromViewController:self.currentViewController toViewController:secondViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+    [self transitionFromViewController:self.currentViewController toViewController:secondViewController duration:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
     }  completion:^(BOOL finished) {
         //......
     }];
