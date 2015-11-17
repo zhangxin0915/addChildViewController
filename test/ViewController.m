@@ -35,8 +35,8 @@
     [self addChildViewController:thirdViewController];
     
     
-    [self.contentView addSubview:thirdViewController.view];
-    self.currentViewController = thirdViewController;
+    [self.contentView addSubview:firstViewController.view];
+    self.currentViewController = firstViewController;
     
 }
 - (void)didReceiveMemoryWarning {
