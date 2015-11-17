@@ -16,6 +16,7 @@
     FirstViewController *firstViewController;
     SecondViewController *secondViewController;
     ThirdViewController *thirdViewController;
+    
 }
 @end
 
@@ -44,25 +45,42 @@
 }
 
 - (IBAction)first:(UIButton *)sender {
-    [self transitionFromViewController:self.currentViewController toViewController:firstViewController duration:1 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-    }  completion:^(BOOL finished) {
-        //......
-    }];
-    self.currentViewController=firstViewController;}
+//    [self didMoveToParentViewController:secondViewController];
+//    [self didMoveToParentViewController:thirdViewController];
+
+    if (![self.currentViewController isKindOfClass:[firstViewController class]]) {
+        [self transitionFromViewController:self.currentViewController toViewController:firstViewController duration:1 options:UIViewAnimationOptionTransitionCurlUp animations:^{
+        }  completion:^(BOOL finished) {
+            //......
+        }];
+        self.currentViewController=firstViewController;
+    }
+   
+   
+}
 
 - (IBAction)second:(UIButton *)sender {
-    [self transitionFromViewController:self.currentViewController toViewController:secondViewController duration:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-    }  completion:^(BOOL finished) {
-        //......
-    }];
-    self.currentViewController=secondViewController;
+//    [self didMoveToParentViewController:firstViewController];
+//    [self didMoveToParentViewController:thirdViewController];
+    if (![self.currentViewController isKindOfClass:[secondViewController class]]) {
+        [self transitionFromViewController:self.currentViewController toViewController:secondViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+        }  completion:^(BOOL finished) {
+            //......
+        }];
+        self.currentViewController=secondViewController;
+    }
 }
 
 - (IBAction)thrid:(UIButton *)sender {
-    [self transitionFromViewController:self.currentViewController toViewController:thirdViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
-    }  completion:^(BOOL finished) {
-        //......
-    }];
-    self.currentViewController=thirdViewController;
+//    [self didMoveToParentViewController:secondViewController];
+//    [self didMoveToParentViewController:firstViewController];
+    if (![self.currentViewController isKindOfClass:[thirdViewController class]]) {
+        [self transitionFromViewController:self.currentViewController toViewController:thirdViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
+        }  completion:^(BOOL finished) {
+            //......
+        }];
+        self.currentViewController=thirdViewController;
+        
+    }
 }
 @end
